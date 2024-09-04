@@ -1,3 +1,5 @@
+Direct Access: [https://ullas313.github.io/roack-paper-scisscors/](https://ullas313.github.io/roack-paper-scisscors/)
+
 Rock Paper Scissors 🎮
 Welcome to the Rock Paper Scissors game! 🤘✂️📄
 
