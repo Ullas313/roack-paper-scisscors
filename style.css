@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #DBDBDB;
+}
+
+h1 {
+    background-color: #706F6F;
+    color: white;
+    height: 70px;
+    line-height: 70px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 35vh;
+    gap: 25px;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: background-color 1s ease;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #706F6F;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 100px;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+#msg {
+    margin-top: 2rem;
+    background-color: #706F6F;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+#reset-btn {
+    margin-top: 20px;
+    background-color: #B0B5B3;
+    color: white;
+    padding: 15px;
+    width: 150px;
+    border-radius: 20px;
+    transition: border 0.5s ease;
+    font-size: 20px;
+    border: none;
+}
+
+#reset-btn:hover {
+    border: 3px solid black;
+}
+
+footer {
+    margin-top: 2%;
+    font-size: 18px;
+    padding: 15px;
+}
+
+/* Media Queries */
+
+/* For tablets in portrait and small screens (768px and below) */
+@media screen and (max-width: 768px) {
+    .choices {
+        height: auto;
+        gap: 15px;
+        margin-top: 3rem;
+    }
+
+    .choice {
+        height: 130px;
+        width: 130px;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .scoreboard {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    #reset-btn {
+        font-size: 18px;
+        padding: 10px;
+        width: 130px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .choices {
+        height: auto;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .scoreboard {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    #reset-btn {
+        font-size: 16px;
+        padding: 8px;
+        width: 120px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
